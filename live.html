@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Stream | HoopyStreams</title>
+    <title>Live Stream | PitchyStreams</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8J3FSRNC5H"></script>
     <script>
@@ -21,15 +21,15 @@
     <nav class="bg-neutral-900 fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <a href="https://hoopystreams.com" class="text-2xl font-bold text-white">HoopyStreams</a>
+                <a href="https://pitchystreams.com" class="text-2xl font-bold text-white">PitchyStreams</a>
                 <div class="hidden md:block flex-grow">
                     <div class="flex items-baseline justify-center space-x-6">
                         <a href="https://hoopystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">NBA</a>
                         <a href="https://hoopystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">NCAA</a>
                         <a href="https://rushystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">NFL</a>
                         <a href="https://rushystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">CFB</a>
-                        <a href="https://battystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">MLB</a>
-                        <a href="https://footystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">SOCCER</a>
+                        <a href="https://pitchystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">MLB</a>
+                        <a href="https://footystreams.xyz" class="hover:text-red-600 px-3 py-2 text-sm font-medium">SOCCER</a>
                         <a href="https://trackystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">F1</a>
                         <a href="https://fightystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">UFC</a>
                         <a href="/blog" class="hover:text-red-600 px-3 py-2 text-sm font-medium">BLOG</a>
@@ -70,7 +70,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const gameId = urlParams.get("game");
 
-        fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vR8F07x4RufUWoiIc5_LwyFZZqaDhiJLuAV9S-a4b8gDVJxEPUDRyCmpH5WuWs15QNu36kpGbjF-oFP/pub?output=csv")
+        fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vTKorPVpsfjXR-4UuxfoYDfEqxLOKrBqCBB7gixUAT9P7vs5QECk10oTY_3oFwFnwMdCJRYFO8qkb38/pub?output=csv")
             .then(res => res.text())
             .then(data => {
                 const rows = data.trim().split("\n").slice(1);
